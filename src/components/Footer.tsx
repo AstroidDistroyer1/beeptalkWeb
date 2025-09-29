@@ -9,10 +9,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-gray-800 mb-6">Information</h3>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</a></li>
-              <li><a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">About Us</a></li>
-              <li><a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Be a Listener</a></li>
-              <li><a href="#privacy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Privacy Policy</a></li>
+              <li><a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</a></li>
+              <li><a href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">About Us</a></li>
+              <li><a href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Be a Listener</a></li>
+              <li><a href="/terms" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Terms of Service</a></li>
+              <li><a href="/community-guidelines" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Community Guidelines</a></li>
+              <li><a href="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Privacy Statement</a></li>
+              <li><a href="/refund-policy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Refund Policy</a></li>
             </ul>
           </div>
           
@@ -22,7 +25,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-700">
                 <Mail size={18} />
-                <span>levelon.in@gmail.com</span>
+                <span>Beeptalkapp@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <Phone size={18} />
