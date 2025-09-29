@@ -1,19 +1,25 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import AppShowcase from './components/AppShowcase';
-import Testimonials from './components/Testimonials';
+import TermsOfService from './components/TermsOfService';
+import PrivacyStatement from './components/PrivacyStatement';
+import CommunityGuidelines from './components/CommunityGuidelines';
+import RefundPolicy from './components/RefundPolicy';
 import Footer from './components/Footer';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <Features />
-      <AppShowcase />
-      <Testimonials />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyStatement />} />
+          <Route path="/community-guidelines" element={<CommunityGuidelines />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
