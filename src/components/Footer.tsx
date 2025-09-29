@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,13 +10,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-gray-800 mb-6">Information</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</a></li>
+              <li><Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</Link></li>
               <li><a href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">About Us</a></li>
               <li><a href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Be a Listener</a></li>
-              <li><a href="/terms" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Terms of Service</a></li>
-              <li><a href="/community-guidelines" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Community Guidelines</a></li>
-              <li><a href="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Privacy Statement</a></li>
-              <li><a href="/refund-policy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Refund Policy</a></li>
+              <li><Link to="/terms" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Terms of Service</Link></li>
+              <li><Link to="/community-guidelines" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Community Guidelines</Link></li>
+              <li><Link to="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Privacy Statement</Link></li>
+              <li><Link to="/refund-policy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Refund Policy</Link></li>
             </ul>
           </div>
           
