@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import TermsOfService from './components/TermsOfService';
 import PrivacyStatement from './components/PrivacyStatement';
 import CommunityGuidelines from './components/CommunityGuidelines';
@@ -12,6 +13,7 @@ function App() {
     <div className="min-h-screen">
       <Header />
       <main>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<TermsOfService />} />
