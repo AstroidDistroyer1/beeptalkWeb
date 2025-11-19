@@ -4,6 +4,7 @@ import TermsOfService from './components/TermsOfService';
 import PrivacyStatement from './components/PrivacyStatement';
 import CommunityGuidelines from './components/CommunityGuidelines';
 import RefundPolicy from './components/RefundPolicy';
+import ChildSafetyPolicy from './components/ChildSafetyPolicy';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyStatement />} />
           <Route path="/community-guidelines" element={<CommunityGuidelines />} />
+          <Route path="/child-safety-policy" element={<ChildSafetyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
       </main>
