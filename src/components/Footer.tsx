@@ -34,7 +34,7 @@ const Footer = () => {
               <li><a href="/" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Home</a></li>
               <li><a href="/#about" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ About Us</a></li>
               <li><a href="/#features" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Features</a></li>
-              <li><a href="/terms" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Terms of Service</a></li>
+              <li><a href="/terms" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Terms and Conditions</a></li>
               <li><a href="/community-guidelines" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Community Guidelines</a></li>
             </ul>
           </div>
@@ -46,9 +46,11 @@ const Footer = () => {
               Legal & Safety
             </h3>
             <ul className="space-y-3">
-              <li><a href="/privacy" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Privacy Statement</a></li>
+              <li><a href="/privacy" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Privacy Policy</a></li>
               <li><a href="/child-safety-policy" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Child Safety Policy</a></li>
               <li><a href="/refund-policy" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Refund Policy</a></li>
+              <li><a href="/coins-policy" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Coins Policy</a></li>
+              <li><a href="/delete-account-faq" className="text-purple-100 hover:text-white hover:translate-x-2 inline-block transition-all duration-200 font-medium">→ Delete Account FAQ</a></li>
             </ul>
           </div>
           

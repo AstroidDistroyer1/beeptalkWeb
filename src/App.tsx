@@ -5,6 +5,8 @@ import PrivacyStatement from './components/PrivacyStatement';
 import CommunityGuidelines from './components/CommunityGuidelines';
 import RefundPolicy from './components/RefundPolicy';
 import ChildSafetyPolicy from './components/ChildSafetyPolicy';
+import CoinsPolicy from './components/CoinsPolicy';
+import DeleteAccountFAQ from './components/DeleteAccountFAQ';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="/community-guidelines" element={<CommunityGuidelines />} />
           <Route path="/child-safety-policy" element={<ChildSafetyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/coins-policy" element={<CoinsPolicy />} />
+          <Route path="/delete-account-faq" element={<DeleteAccountFAQ />} />
         </Routes>
       </main>
       <Footer />
