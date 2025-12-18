@@ -2,6 +2,12 @@
   command = "npm run build"
   publish = "dist"
 
+# Serve .well-known files directly (for Android App Links)
+[[redirects]]
+  from = "/.well-known/*"
+  to = "/.well-known/:splat"
+  status = 200
+
 # SPA fallback to index.html
 [[redirects]]
   from = "/*"

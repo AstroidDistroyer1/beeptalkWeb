@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.beeptalk2025.app",
+    "sha256_cert_fingerprints": ["CB:8C:0F:F7:68:96:5C:4B:A2:47:44:44:1D:03:9C:45:C0:2D:3E:3F:DE:57:31:06:1E:C2:3F:78:BB:A3:17:3C"]
+  }
+}]
