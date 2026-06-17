@@ -68,8 +68,8 @@ const Footer = () => {
               <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-4 rounded-xl hover:bg-white/20 transition-all">
                 <MapPin size={20} className="mt-0.5 text-pink-300 flex-shrink-0" />
                 <span className="text-purple-100 font-medium">
-                  Thallacheruvu, Guntur District<br />
-                  Andhra Pradesh, Palnadu - 522409
+                  2-252, Palli, Thallacheruvu, 1, Palli,<br />
+                  Guntur, Palnadu, Andhra Pradesh - 522409
                 </span>
               </div>
             </div>

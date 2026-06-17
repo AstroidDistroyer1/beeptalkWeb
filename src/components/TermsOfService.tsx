@@ -167,7 +167,7 @@ const TermsOfService: React.FC = () => {
             In-App Reporting: Report profiles or issues via the app.
             <br />Email Support: <a href="mailto:Beeptalkapp@gmail.com" className="text-blue-600 underline">Beeptalkapp@gmail.com</a>
             <br />Email: <a href="mailto:grievance.officer@beeptalk.in" className="text-blue-600 underline">grievance.officer@beeptalk.in</a>
-            <br />Address: Thallacheruvu, Guntur District, Andhra Pradesh, Palnadu - 522409
+            <br />Address: 2-252, Palli, Thallacheruvu, 1, Palli, Guntur, Palnadu, Andhra Pradesh - 522409
           </p>
 
           <h3 className="text-2xl font-semibold text-gray-800 mt-10">Changes to This Policy</h3>
