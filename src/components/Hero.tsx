@@ -1,127 +1,92 @@
- 
-import { Download, MessageCircle, Video, Sparkles, Heart, Shield } from 'lucide-react';
+import { Download, MessageCircle, Video, Shield } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-orange-300/30 to-pink-400/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-purple-300/30 to-pink-400/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    <section id="home" className="pt-20 min-h-screen bg-white relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-violet-50 rounded-full blur-3xl opacity-60 -translate-y-1/4 translate-x-1/4"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-violet-50 rounded-full blur-3xl opacity-40 translate-y-1/4 -translate-x-1/4"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
             <div className="space-y-6">
-              {/* Premium badge */}
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
-                <Sparkles size={16} />
-                <span>India's Most Trusted Platform</span>
-              </div>
+              <span className="inline-flex items-center gap-2 bg-violet-50 text-violet-700 border border-violet-200 px-4 py-1.5 rounded-full text-sm font-semibold">
+                <span className="w-2 h-2 bg-violet-500 rounded-full"></span>
+                India's Most Trusted Platform
+              </span>
 
-              <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 animate-gradient">
-                  Don't Worry
-                </span>
+              <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                <span className="text-violet-600">Don't Worry</span>
                 <br />
-                <span className="text-gray-800">We Have Your</span>
+                <span className="text-slate-900">We Have Your</span>
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"> Back</span>
+                <span className="text-slate-900">Back</span>
               </h1>
-              
-              <div className="space-y-4">
-                <p className="text-2xl font-semibold text-gray-700 flex items-center gap-2">
-                  <Heart className="text-pink-500 animate-pulse" size={24} />
+
+              <div className="space-y-3">
+                <p className="text-lg font-medium text-slate-700">
                   Feeling sad and lonely?
                 </p>
-                <p className="text-xl text-gray-600">Don't worry! Connect with caring people who understand you</p>
-                
-                <div className="flex flex-wrap gap-3 text-sm">
-                  <span className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <p className="text-slate-500 text-base leading-relaxed">
+                  Don't worry! Connect with caring people who understand you.
+                </p>
+
+                <div className="flex flex-wrap gap-2 pt-1">
+                  <span className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    <span className="w-1.5 h-1.5 bg-violet-400 rounded-full"></span>
                     Stay Anonymous
                   </span>
-                  <span className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <MessageCircle size={16} />
+                  <span className="flex items-center gap-2 border border-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium hover:border-violet-300 hover:text-violet-600 transition-colors">
+                    <MessageCircle size={14} />
                     Instant Chat
                   </span>
-                  <span className="flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <Video size={16} />
+                  <span className="flex items-center gap-2 border border-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium hover:border-violet-300 hover:text-violet-600 transition-colors">
+                    <Video size={14} />
                     Audio & Video
                   </span>
                 </div>
               </div>
             </div>
 
-            <button className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white px-10 py-5 rounded-2xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 text-lg font-bold group hover:scale-105 shadow-xl">
-              <Download size={24} />
+            <button className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3.5 rounded-xl transition-colors duration-200 flex items-center gap-3 text-base font-semibold group w-fit">
+              <Download size={20} />
               Coming Soon
-              <div className="group-hover:translate-x-2 transition-transform duration-200">→</div>
+              <span className="group-hover:translate-x-1 transition-transform duration-200 text-violet-300">→</span>
             </button>
 
-            {/* Animated chat bubbles */}
-            <div className="relative flex gap-4">
-              <div className="bg-gradient-to-br from-pink-500 to-rose-500 text-white px-6 py-3 rounded-2xl rounded-bl-none inline-block text-2xl font-bold shadow-xl animate-bounce-slow">
+            <div className="flex gap-3">
+              <div className="bg-slate-900 text-white px-5 py-2.5 rounded-xl rounded-bl-none inline-block text-base font-semibold">
                 Hi! 👋
               </div>
-              <div className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white px-6 py-3 rounded-2xl rounded-br-none inline-block text-lg font-semibold shadow-xl animate-bounce-slow delay-300">
+              <div className="bg-violet-600 text-white px-5 py-2.5 rounded-xl rounded-br-none inline-block text-sm font-medium">
                 Let's talk! 💬
               </div>
             </div>
           </div>
 
-          <div className="relative animate-float">
-            {/* Direct app interface image */}
+          <div className="relative">
             <div className="relative mx-auto max-w-sm">
-              <div className="absolute -inset-4 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
-              <img 
-                src="https://beeptalk.s3.eu-north-1.amazonaws.com/Group+1000006242.png" 
-                alt="Beeptalk App Interface" 
-                className="relative w-full h-auto shadow-2xl rounded-3xl ring-4 ring-white/50 hover:scale-105 transition-transform duration-500"
+              <div className="absolute -inset-3 bg-violet-100 rounded-3xl blur-2xl opacity-60"></div>
+              <img
+                src="https://beeptalk.s3.eu-north-1.amazonaws.com/Group+1000006242.png"
+                alt="Beeptalk App Interface"
+                className="relative w-full h-auto rounded-3xl shadow-2xl"
               />
             </div>
 
-            {/* Enhanced badges */}
-            <div className="absolute -top-6 -right-6 bg-gradient-to-br from-orange-500 to-pink-500 text-white px-6 py-3 rounded-2xl font-bold text-sm shadow-2xl transform rotate-12 hover:rotate-6 transition-transform duration-300 flex items-center gap-2 animate-bounce-slow">
-              <Shield size={20} />
+            <div className="absolute -top-4 -right-4 bg-slate-900 text-white px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2">
+              <Shield size={14} className="text-violet-400" />
               100% Safe & Secure
             </div>
 
-            <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-2xl font-bold text-sm shadow-2xl transform -rotate-12 hover:-rotate-6 transition-transform duration-300 flex items-center gap-2 animate-bounce-slow delay-300">
-              <Sparkles size={20} />
-              Verified Users
+            <div className="absolute -bottom-4 -left-4 bg-violet-600 text-white px-4 py-2 rounded-xl text-sm font-semibold">
+              ✓ Verified Users
             </div>
           </div>
         </div>
       </div>
-
-      {/* Add custom animations to index.css */}
-      <style>{`
-        @keyframes gradient {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-        }
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-gradient { background-size: 200% 200%; animation: gradient 3s ease infinite; }
-        .animate-float { animation: float 3s ease-in-out infinite; }
-        .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
-        .animate-fade-in { animation: fade-in 1s ease-out; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-500 { animation-delay: 0.5s; }
-        .delay-1000 { animation-delay: 1s; }
-      `}</style>
     </section>
   );
 };
